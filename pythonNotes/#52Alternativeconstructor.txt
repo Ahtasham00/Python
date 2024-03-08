@@ -1,0 +1,53 @@
+//isAww
+=========================================
+class Method as Alternatice constructor
+=========================================
+If data is in different format and constructor can not handle 
+them if and we need to handel them we can use class method as Alternatice constructor
+
+
+============Actually it is an other use of class mrthod===========
+==========Decleration============
+SYNTAX:
+@classmethod
+def from_name(cls,string):
+ BODY
+ return cls(parameters)
+----------------------------------
+EXAMLPE:
+@classmethod
+def from_strig(cls,string):
+ name,age=string.split(",")
+ return cls(name,int(age))
+
+==========CALLING================
+syntax:
+Class=Class.classmethod(parameter)
+EXAMPLE:
+Employee=Employee.from_string("Ali ,25")
+------------------------------------------------
+
+Whats going on 
+
+In classmethod (Alternative Constructor) 
+what actualy is going on it simply create instance (object)  and return its attribute
+And we use those attributes in actual object as parametr of constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

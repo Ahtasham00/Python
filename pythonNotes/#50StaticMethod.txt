@@ -1,0 +1,56 @@
+//isAww
+#isAww
+===============
+Static method
+===============
+##It is like normal method but lies within class
+##It does not required self argument
+##we can call it with object or directly with class name
+##Syntax : 
+class Name:
+ @staticmethod
+ def fun(arg2,arg2)
+
+Name.fun(par1,par2)          ==>directly with calss name
+obj.fun(par1,par2)           ==>with object
+
+##So why we need it just create simple function outside of class
+ REASON : if some one import this class and we want that some one can also use this function 
+##It is called uitility function
+
+
+
+
+=============
+Static method
+=============
+self if just like function it is can be sue without considering object of class 
+
+Difference :
+
+1) Actual difference between simple function and and static method is that it lies with in class
+but simpkke fubnction do not belong to class.
+2) The difference between Normal method and static method is Normal method belong to some object
+and static method do not belong to any object 
+    In simple method we have to pass self argument 
+    But in static method there is no need of pass self 
+
+It simply do not associated to any class or instance
+**But to call them we have to either use use instance or class**
+Use :
+If we want to ship any class to other program and want to share some method that we can not 
+directly import method so we have to use static method
+
+Syntax :
+  @staticmethod
+  def function():
+    defination
+
+Example : 
+class Math:
+  @staticmethod(slef,n):
+  def add(a,b):
+    return a+b
+
+print(a.add(10,20))
+print(Math.add(10,20))

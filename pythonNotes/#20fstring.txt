@@ -1,0 +1,72 @@
+//isAww
+========
+fstring
+========
+Before going to fstring we should know strng formating
+----------------
+String Formating
+----------------
+
+If we use string and want to add some variables in string later we can use string formating
+Example:
+str="My name is {} and I am from {}"
+country="Pakistan"
+name="Ali"
+print(str.format(name,country))
+output="My name is Ali and Iam from Pakistan"
+
+-------
+issue
+--------
+if I place print(str.format(country,name))
+output="My name is Pakistan and i am from Ali"
+
+To solve this we place number in curly brackets
+str="My name is {1} and I am from {0}"
+print(str.format(country,name))
+output="My name is Ali and Iam from Pakistan"
+                        
+                 THIS METHOD IS NOT CONVINEANENT
+------------------------------------------------------------------------------------------
+Now these Days we use fstring to solve this problem
+
+Syntax : str=f"condent{val1},{val2},{avl3},...."
+     OR: print(f"condent{val1},{val2},{avl3},....")
+Example
+name="Ali"
+country="Pakistan"
+str=f"My name is {name} and i am from {country}"
+print(str)
+
+------------
+Round about   {variable:.<digits>f}
+------------
+price=202.23456
+print("price of fruite is {price:.2f}")   round about up to 2 digits
+output : 202.23
+
+
+---------------------------------------------------------------------------
+str=f"my name is {name} and i am from {country}"
+
+ To display {name} and {country} as it instead of replacing variables we use 
+ {{name}}  {{countryr}}
+
+print(f"my name is {{name}} and i am from {{country}}")
+output : "my name is {{name}} and i am from {{country}}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

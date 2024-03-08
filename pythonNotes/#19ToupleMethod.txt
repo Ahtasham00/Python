@@ -1,0 +1,17 @@
+//isAww
+--------------
+Touple Methods 
+--------------
+count()    //count occurence of given paramenter in touple in exist
+index()    //give index of first occurance given paramenter in touple if found else value error
+ Example:
+   index(6)   
+   index(value,startingIndex,endingIndex)
+   index(4,3,8)  //found 4 between index 3 and 8
+len(touple)  //give length of touple
+
+---------------------------------------------------------------------
+How can we made change in touple
+---------------------------------------------------------------------
+To make change in tuple first convvert it into list than made change in it
+and than at end convert it into touple

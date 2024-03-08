@@ -1,0 +1,38 @@
+Variables
+
+IS Container hold data
+a=1               int
+b=True            bool
+c="Harray"         string
+d=None
+
+
+How to check data type of variable
+
+type(NameOfVariable)
+print(type(a))
+
+
+BuiltIndataTypes
+
+1)Numeric data: int float complex
+int     123,323
+float   2.4
+complex 2+4i
+2)Text data: str
+
+3)Boolean data
+Yes,No
+
+4)sequenced data: list, tuple
+4.1)list :collection of different data
+list1=[8,2.3,[4,5],["apple","banana"]]
+print(list1)
+4.2)tuple :not changeable  mutable(changeable),immutable(not changeable)
+tuple1=(("parrot","sparrow"),("lion","Tiger"))
+print(tuple1)
+
+Mapped data : dict
+dict1={{"nmae":"Ali","age":20,"convote":True}
+print(dist1)
+

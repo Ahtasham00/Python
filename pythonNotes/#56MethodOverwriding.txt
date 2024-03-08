@@ -1,0 +1,22 @@
+//isAww
+=====================
+function overwriding
+=====================
+In this we crete method in child class with name that also present in parent class
+
+Example:
+class Shape:
+ def __init__(slef,x,y):
+  self.x=x
+  self.y=y
+ def are(self)
+  return slef.x*self.y
+
+class circle:
+ def __init__(slef,radiuse):
+  slef.radiuse=radiuse
+ def are(def):      =========>functoin overwriding
+  return self.rariuse*super().area(10,20)
+
+obj=circle(20)
+print(obj.area())

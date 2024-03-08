@@ -1,0 +1,36 @@
+//isAww
+========================
+Local Vs global variable
+========================
+##local variable : limit scope
+Example:
+def fun()
+ x=10
+ print(x)    //localy accessable 
+print(x)    //generate error 
+
+##global variable : use any where in program 
+Example:
+x=10
+print(x)    // global variable
+
+##if same name variable used in functin as global than wihtin function local variable will work 
+Example:
+x=20
+def fun()
+ x=10
+ print(x) => 10
+print(x) =>20
+
+##To access golbal variable in function that have same name local variable
+"global" keyword is used
+SYNTAX:  global <global variable>
+
+Example:
+x=20
+def fun()
+ globe x
+ x=10
+ print(x) => 10
+print(x) =>10
+

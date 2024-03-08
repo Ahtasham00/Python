@@ -1,0 +1,32 @@
+//isAww
+----------------
+Functions
+----------------
+Syntax :  def NameOfFunction(parameters):
+            BodyOfFunction
+ 
+Example : def Average(a,b,c)
+            result=(a+b+c)/3
+
+Example : def checkgreater(a,b):
+            if(a>b):
+              print("First Number is greater")
+            else:
+              print("Second Number is greater")
+
+There are Two types of function 
+1)Built in function
+   we dont need to define them 
+
+2)User define function
+   programer create these functions
+   we have to define them using def key word
+
+
+
+-----------------
+Return statement
+-----------------
+
+syntax : return value 
+

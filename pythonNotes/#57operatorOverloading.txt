@@ -1,0 +1,41 @@
+#isAww
+=====================
+Operator overloading
+=====================
+whenever we want to perform operation between two instance of class we need operator overloading
+
+Example:
+a=10
+b=20  
+c=a+b
+Bur let suppose
+
+classname obj1,obj2
+obj1+obj2             //we can not add obj1+obj2 Bcoz python is not intelligent enough
+
+
+to perform operation we have to use operator overloading
+
+Syntax : 
+for each operation we have some resorve name like 
+
+for + we have to use  __add__(self,obj)
+for - we have to use  __sub__(self,obj)
+
+
+to check list of operator use google
+
+Example :
+
+class Vector:
+ def __init__(self,a,b,c):
+  self.a=a
+  self.b=b
+  self.c=c
+ def __add__(self,obj):
+  return Vector(self.a+obj.a,self.b+obj.b,self.c+obj.c)
+
+obj1=Vector(1,2,3)
+obj2=Vector(4,5,6)
+print(obj1.__add__(obj2))
+ 

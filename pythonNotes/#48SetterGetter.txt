@@ -1,0 +1,24 @@
+//isAww
+===============
+Setter&Getter
+===============
+#Remember one thing weather it is setter or getter you need to pass "self parameter" in it
+--------
+getter
+--------
+Syntax:
+def getvar1(self):
+ return self.var1
+def getvar2(self):
+ return self.var2
+
+obg.getvar1
+-------
+setter
+-------
+Syntax: 
+def setvar1(self,value)
+ self.value=value
+
+obj.setvalue(20)
+

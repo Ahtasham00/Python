@@ -1,0 +1,32 @@
+//isAww
+
+#SYNTAX
+while(condition):
+ block of code
+ 
+#EXAMPLE
+val=0
+while(val<5)
+  print(val)
+  val=val+1
+
+#EXAMPLE
+val="Y"
+while(val=="Y"):
+ print("Run RUN RUN")
+ val=input("Do you want to run again if Yes Press Y if NO press N")
+
+##There is no do while loop in python 
+  In do while loop first time loop will excute whatever condition is
+  But second time to excute it will check condition
+
+##To emulate do while loop 
+
+while True:
+ print(i)
+ i=i+1
+ if(i%100==0):
+ break
+=>This work same as do while loop 
+=>First time it excute irrespective of condition
+=>Second time it will check condition

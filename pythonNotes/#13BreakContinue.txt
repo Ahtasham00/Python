@@ -1,0 +1,30 @@
+//isAww
+=======================
+Break and Continue
+=======================
+
+--------------
+Break
+--------------
+##To exit after particular iteration in loop break statement is used
+
+---------
+Example
+---------
+for i in range(12):
+ if(i==10):                    //if i ==10 it will break and exit from loop
+ break                         //i=11,i=12, will never print
+ print(i+1)
+                        
+                              
+
+---------------
+Continue
+---------------
+##To skip after particular iteration in loop continue statement is used
+
+for i in range(12):
+ if(i==10):                    //if i ==10 it will skip and do not print any thing below to
+ continue                     //continue statement for particular iteration
+ print(i)
+

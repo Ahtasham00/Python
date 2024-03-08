@@ -1,0 +1,21 @@
+//isAww
+
+#Given code itterate each letter of string
+for i in string:
+ print(i)
+
+#Given code itterate each element of list
+for i in list:
+ print(i)
+
+#To use loop for specific time
+  range()
+ for i in range(10)       same as     for(int i=0;i<10;i==)
+  print(i)                              print(i)
+          range(10) mean 0 to 9
+
+#we can pass initial and last value in range value
+ range(1,10)        start from 1 to 9
+ 
+#we can pass third parameter as well
+ range(1,10,2)      same as for(int i=0;i<10;i=i+2)  

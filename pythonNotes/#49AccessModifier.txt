@@ -1,0 +1,45 @@
+/isAww
+================
+Access Modifier
+================
+In python there is no public,private,protected soecifier in python but we still consider them
+
+Types of Specifier
+1)public       =>name
+2)private      =>__name
+3)protected    => 
+Pytohn do not have these modifier we can call them for convention
+
+--------
+private
+--------
+How to declare private attribute
+
+syntax  : __attribute,self.__attribute
+Example : __name,self.__name 
+
+##"Name mangling" in python
+ we can not access private data member directly
+ But we can access private data member through name mangling
+ It is technique to protect private datameber from being accidently overwrite
+
+Syntax  :   obj._<Class>__<attribute>
+Example :   obj._Person__name
+
+if we access private data member directly we can not do so
+But by using name mangling technique we can access them 
+
+Whole Example:
+class Person:
+ def __init__(self,name,age):
+  self.__name=name  ->private
+  self.age=age      ->public
+
+
+---------
+Protected      Not understand deeply
+---------
+How to declare protected attribute
+
+syntax  : _attribute,self._attribute
+Example : _name,self._name 

@@ -1,0 +1,40 @@
+//isAww
+===================
+Short hand if else
+===================
+
+##it is shor hand syntax of if and else
+-------------------------------------------------------------------------------------
+Syntax:"Do" if condition else "Do This"
+
+Example1:
+a=10
+b=20
+print("A") id a>b else print("D")
+
+
+Example2: a="Good" if y>z else "Bad"
+
+
+##We can also hanve multiple else statement in single lines
+-------------------------------------------------------------------------------------
+Syntax: "Do" if condition else "Do This" if condition else "Do this"
+
+Same As:
+if (condition):
+ do 
+else
+ if conditon:
+  "Do"
+ else
+ "Do This"
+--------
+EXAMPLE3:
+--------
+a=10
+b=20
+print("A") if a>b else if a==b print("=") else print("B")
+-----------------------------------------------------------------------------------------
+
+##It is not convienet for complex function 
+##if code is complex than it effect readibality

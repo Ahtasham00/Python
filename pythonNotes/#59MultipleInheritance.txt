@@ -1,0 +1,37 @@
+#isAww
+=====================
+Multiple Inheritance
+=====================
+
+In Multiple Inheritance there is more than one parent classes of single child class
+
+Syntax: class childclass(parentclass1,parentclass2,parentclass3,....,parentclassn):
+
+-------------------------------------------------------------------------------------------------------------------
+But if there is same method define in both parent classes and we call that method through child class
+The method that will call depends upon sequence in which we write parent classes in parameter of child class
+-----------------------------------------------------------------------------------------------------------------
+Example :
+   class childclass(parentclass2,parentclass1)
+           --------------------------------------------------------------------------------------------   
+           As parentcalss2 is specify first so method of parenclass2 will call instead of parentclass1
+           --------------------------------------------------------------------------------------------
+
+
+------------
+Explaination 
+------------
+Actually there is MRO(Method resolution order) in python that tell python in which order it should find callinf method
+
+
+Syntax of MRO
+ print(classname.mro())   //it will tell sequence to python where it have to find calling method
+
+class childclass(parentclass2,parentclass1)
+  method()
+
+obj1=childclass()
+obj1.method()
+
+Now it is responsibility of MRO to tell python where to find .method()
+  mro will disply folowing result first check child class than check parentclass2 and then parentclass1

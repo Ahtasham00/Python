@@ -1,0 +1,63 @@
+#isAww
+**what is command linse utility**
+ A utility that we can use through command line by providing various commands
+
+ we can create command line utility by using **argparse**  module
+ => argparse is built in module
+
+Syntax :
+#The main entry point for command-line parsing.
+parser=argparse.ArgumentParser()
+#Add command lline arguments
+parser.add_arguments("arg1",help="discreption of argument1")
+parser.add_arguments("arg2",help="discreption of argument2")
+#Prase the arguments
+args=parser.parse_arge()
+#Using Argumetns in code
+print(args.arg1)
+print(args.arg2)
+
+====================================IMP===================================
+**IMP*** ; Remembr that parser take by default argument as string 
+    If we want to specify data type of argument we can 
+    SYNTAX  :     parser.add_arguments("Arguemnt Name",type=datatype,help="discreption of Argument")
+    EXAMPLE :     parser.add_arguments("arg1",type=int,help="discreption of argument1")
+
+===================================================================================
+Example :  let say we crete program base on comman line utility in such  a way that 
+           It take two arguments and return there sum
+               ===>pyhon3 myprogam 10 20-----> first agrumnet
+                                    |--------> Second Argument
+
+import argparse
+parser=argparse.ArgumentParser()
+parser.add_argument("firstArgument",type=int,help="discreption : fitst argrumt that you wnat to add into send arguemnt")
+parser.add_argument("secondArgument",type=int,help="discreption : fitst argrumt that you wnat to add into send arguemnt")
+args=parser.parse_args()
+sum=args.firstArgument+args.secondArgument
+print(sum)
+
+
+=================
+Optional Argument
+==================
+As in above examples we use positional arguemnt which is force user to provide arguemnt necessarly In optional it also require argumrnt but with flag.
+We can make it to provide no argument just pass flag Example Verbose
+BUt there is another method to take arguemnt which is known as Optional arguemnt
+It is flag we usually see in many commands line utility
+Syntax:
+1)parser.add_arguments("--ArguemntName",help="discreption of Argument")
+2)parser.add_arguments("-A",help="discreption of Argument")
+3)parser.add_arguments("-A","--ArguemntName",help="discreption of Argument")
+
+Now at time of parsing parser
+we have to call in such  a way 
+Example :
+args=parser.parse_args()
+args.ArgumentName          ----**Imp**----> we use args.ArgumentName(--ArgumentName) not short from(-A) 
+
+How to call program in termianl
+1)python myprogram.py -A 
+2)python myprogram.py --ArguemntName
+3)python myprogram.py --ArguemntName        or   python myprogram.py -A 
+**Remember that we can not use optional and Positional Arguemnt as same time**

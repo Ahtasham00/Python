@@ -1,0 +1,11 @@
+#isAww
+===================
+Single Inheritance
+===================
+
+in single inheritance there is only one parent of child class 
+Syntax :
+class childclass(Parentclass):
+  we can also prefrom function overloading here 
+
+Example given in coding section

@@ -1,0 +1,16 @@
+//isAww
+===============
+Custom error
+===============
+##Some time we need to raise error instead of python 
+ For example : le suppose we need value between 0 and 10 but user enter 20 so we need to through error
+##This can be done through "raise" keyword
+Syntax: 
+condition:
+ raise <errorName>("Message you want to display")
+Example:
+valu=int(input("Enter value Between 0 and 10"))
+if(val<0 or val>10)
+ raise valueError("invalid value")
+##There are different types of error valueError,indexError,....,etc
+ 

@@ -1,0 +1,63 @@
+//isAww
+============================
+Function Arguments
+============================
+##Four Types of Arguments
+1)Default Argument
+-------------
+EXAMPLE
+-------------
+def average(a=10,b=20)
+  print((a+b)/2)        
+ **we define value of variable at same time
+--------------------------------------------------------------------------------------------
+ *!!*But if i pass value in parameter it ignore default value and treate with parameters*!!*
+ Example 
+  average(15,25)         now everage function ignore 10&20 and take 15&25  
+  average(5)            now average function ignore  first agrgument and treate 5&20
+  average(b=7)          now average function ignore second argument and treate 10&7  
+--------------------------------------------------------------------------------------------
+2)Keword Argument   
+##If you want that Order does not matter than we use Keyword Arguments
+----------
+Example
+----------
+def sum(a,b)
+ print(a+b)
+
+##calling sum function
+sum(7,10)        //a=7,b=10
+sum(b=5,a=7)     //a=7,b=5
+      
+3)Variable length Argument
+##If you want to define number or Arguments on run tme then we use vaariable lenfth Argument
+----------------
+EXAMPLE
+----------------
+def average(*num)       //Now you can pass many arguments as you want
+ sum=0
+ for number in num
+    sum=sum+number
+ print (sum) 
+##calling fubction
+average(1,2)
+average(1,2,3)
+average(1,2,3,4)    //up to your requirement
+--------------------------------------EXPLAINATION-------------------------------------
+what happening here is it take it as tuple(list of variales like array)  
+If YOU print type(num)        //out put will be touple
+If you want Dictonary instead of touple we use "**"
+Example (**num)       Now it act as Dictonary
+
+---------------------------------------------------------------------------------------
+4)Required Argument
+## It made necessary to pass variable value
+----------
+Example
+----------
+def mul(a,b=10)
+ 
+##calling mul function
+mul()        //It generate error bcoz "a" is required Argument
+mul(5)       //It work fine bcoz a=5 and b is default Argument
+                      

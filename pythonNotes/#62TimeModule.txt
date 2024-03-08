@@ -1,0 +1,16 @@
+#isAww
+==============
+Time Module
+==============
+import time
+
+time.sleep(NofSeconds)  //Execuation will stop until NofSeconds
+time.time()  //
+time.localtime()
+
+time.strftime()   //Disply current time required argunment
+  Example  strftime("%H") return current Hour
+           strftime("%M") return current Minute
+           strftime("%S") return current second
+           strftime("%H:%M:%S")  retrun time in H:M:S format
+

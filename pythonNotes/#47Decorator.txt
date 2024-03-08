@@ -1,0 +1,90 @@
+//isAww
+==========
+Decorator
+==========
+Decroator is function that take function as an arguments and retrun paramterize function 
+after modification
+
+Explaination: Let suppose we have many function and we need to display same messge in each function
+Then instead of printing in each function we can use Decorator function and pass all those 
+functin in it  an it will do its jobs according to requirements
+
+Suntax:
+def <Decroator>(function)           -->Decorate function
+ code according to requirement
+@<Decroator>                        -->This will tell below functin should be decoarte
+function1():
+ body if function 1
+@<Decroator>
+function():
+ body of function 2
+---------------------------------------------------------------------------
+@<Decroator>     it will tell that below functin should pass through Decorator function 
+          @<Decorator> is not fix word
+
+@Decroator
+ def function():
+  function body
+
+OR
+
+Decroator(function)()
+
+we can use @Decroator in uber line of function defination or can pass function to 
+Decorator as arguments
+
+--------------------------------------------------------------------------------
+Example:
+def greet(fx):
+ def mfx():
+  print("Wlecome To Python")
+   fx()
+  print("Good By from Python")
+ return mfx
+
+@greet
+def hello():
+ print("Helo world")
+
+helo()
+
+-----------------------------------------------------------------------------------------
+
+For parametrize function Syntax is change
+we need to change mfx function and specify list parameter
+explain in Function method module
+
+def mfx(*args,**Kwargs)
+
+Example:
+def greet(fx):
+ def mfx(*args,**Kwargs):
+  print("Wlecome To Python")
+   fx(*args,**Kwargs)
+  print("Good By from Python")
+ return mfx
+
+@greet
+def hello(nmae):
+ print("Helo : ",name)
+
+helo("Alpha")
+
+
+or 
+greet(helo)("Alpha")
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+escape sequence chracter  
+\n     to move in next line
+\" "\  to double coutation
+\'  \' to single quation
+
+
+#     to comment
+
+""" content """    to comment
+
+'''content '''   to comment
+
+we can pass multiple parameter in printf()
+
+example printf(a,b,c)
+ reserve parameter in print 
+These are 
+1)sep
+to use any sperator instad of space we can define as follow
+print("hey",a,b,sep="~")
+
+2)end
+To add some thinf at end of line. By default value of end="/n"
+print("hey",a,b,end="anythinf")
+3)file
+To write on file
+

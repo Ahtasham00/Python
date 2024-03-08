@@ -1,0 +1,138 @@
+//isAww
+====================================
+Instance variable Vs Class Variable
+====================================
+
+####why self argument usedn in class functions
+####How self argument work actualy
+
+emp1=Employee("Bot")
+
+
+emp1.showDetails()   is same as  Employee.showDetails(emp1) 
+
+=======Explaination=========
+actualy emp1.showDetails() converted into Employee.showDetails(emp1)
+Example:
+class person:
+ def __init__(self,name):
+  print(f"Name of person is{self.name}")
+  def info(self):
+   print(f"name of person is {self.name}")
+obj=person("Akhed")
+  obj.info()     =>print Akhed
+  person.info(obj)  =>print akhed
+
+
+when we reomve Argument "self" from info function
+ def info():
+  print(f"Name of person is{self.name}")
+
+  obj.info()        it give following error
+   info function require 0 argument But one parameter was pass 
+##Its mean hidden parameter is passing which is  object name itself
+----------------------------------------------------------------------------------------
+
+================
+INSTANCE VARIABLE
+================
+The variable that is associated for each instance of class (object) called instance variable
+##For each object its vale is changeable
+Example
+class Person:
+ def __init__(self,nm):
+  self.name=nm     ==>name is instance variable
+For each object we can set different name
+
+
+===============
+class variable
+===============
+##It is a variable that will be geneaic for each instance(object)
+#Mean that will remain same for each onject
+##It syntac is same as instance variable but we change value of instance variable through
+  constructor or using setter function but 
+##For class variable we define its value at time of decleration
+========
+Example
+========
+calss employee:
+ companyname="Alpha"           ============>>Class cariable remain same for each instance
+ def __init__(self,name):
+  self.name=name                 =========>>instance variable
+ def info(self):
+  print(self.name,self.campanyname)
+
+obj1=employee("Adnan")
+obj2=employee("Akmal")
+obj1.info()   ====>name=adnan,companyname=Alpha
+obj2.info()   ====>name=Akmal,companyname=Alpha
+===================================================================================
+Now what happen if we change value of class variable from ony object 
+##Will it value of class variable change for all variable  
+  ANSWER is    NO 
+##When we change value of class variable from particular variable it will onyl change for 
+  that instance
+##First it check for instance variable if it present then it will print it if instance 
+  varialble not present it will check class variable
+
+
+##How to change class variable global
+Instead of using object we can change class variable with class name 
+EXAMPLE:
+class Person :
+ companyname="Alpha"
+ 
+Person.companyname="Beta"
+obj1.companynmae      =======>Beta
+
+
+===================================================================
+How to call class variable within same class
+we can call them with CLASS  name
+Example:
+class Person :
+ numberofEmployee=0
+ def addemployee(self,name):
+  slef.name=name
+  Person.numberofEmployee +=1       ===>calling class variable within class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

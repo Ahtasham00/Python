@@ -1,0 +1,199 @@
+//isAww
+============
+Sets Methods
+============
+1)union()     ,   intersection()
+syntax: set1.union(set2)
+Example:
+set1={1,2,3,4}
+set2={3,4,5,6}
+set3=set1.union(set2)
+print(set3)   =>{1,2,3,4,5,6}
+
+2)update()
+##update one set in such  away that it add elements of other set in it
+SYNTAX : set1.update(set2)
+Example:
+set1={1,2,3,4}
+set2={3,4,5,6}
+set1.update(set2)
+print(set1)   =>{1,2,3,4,5,6}
+
+3)intersection_update()  
+##Upadte set one in such a way that it modify set one by only adding element in it that 
+ are commen between set one and other set[s]
+SYNTAX : set1.intersection_update(set2)
+Example:
+set1={1,2,3,4}
+set2={3,4,5,6}
+set1.intersection_update(set2)
+print(set1)   =>{3,4}
+
+4)Symmetric_difference()     AUB-AnB
+##Contain all values of sets other than common values
+SYNTAX : set1.symmetric_difference(set2)
+Example
+set1={1,2,3,4}
+set2={3,4,5,6}
+set3=set1.symmetric_difference(set2)
+print(set3)   =>{1,2,5,6} 
+
+
+5)difference()      A-B        and  difference_update()
+##Minus all element of Set1 that are in set2 and left only those that are in set1 but
+  Not in set2
+SYNTAX : set1.difference(set2)
+Example:
+set1={1,2,3,4}
+set2={3,4,5,6}
+set3=set1.difference(set2)
+print(set3)   =>{1,2}
+
+##difference_update() is same but modify set1
+
+6)isdisjoint()
+## Check weather is there no common element in two sets if no than true else flase
+SYNTAX : set1.isdisjoint(set2)
+Example:
+set1={1,2,3}
+set2={4,5,6}
+print(set1.isdisjoint(set2))   =>True
+7)isuperset()   
+#weather one set contain element and  other set all element are also in 
+  in set one if yse true alse false
+SYNTAX : set1.issuperset(set2)
+Example:
+set1={1,2,3,4,5,6}
+set2={2,3,4}
+print(set1.issuperset(set2))   =>True
+
+
+8)issubset()
+#weather All element os set one are part on other set
+SYNTAX : set1.issubset(set2)
+Example:
+set1={1,2,3}
+set2={1,2,3,4,5}
+print(set1.issunset(set2))   =>True
+
+
+9)add()
+##If you want to add element in setcuse add fuction
+SYNTAX: set1.add(value)
+Example:
+set1={1,2,3}
+set1.add(4)
+print(set1)  =>{1,2,3,4}
+
+10)remove()/discard()
+##remove through error when vlaue not found while discard() will not
+##If you want to remove element from set use remove fuction
+SYNTAX: set1.remove(value)
+Example:
+set1={1,2,3,4}
+set1.remove(4)
+print(set1)  =>{1,2,3}
+
+11)pop()
+##Bascially pop give last element But as set is unorded it ramdomly pop element from set
+SYNTAX: set1.pop()
+Example:
+set1={1,2,3,4}
+print(set1.pop())   => 2
+print(set1)  =>{1,3,4}
+
+@_@) del 
+it is A KEYWORD that delete entire set
+SYNTAX: del setname
+Example:
+set1={1,2,3,4}
+del set1
+
+12)clear()
+##If you want to clear set insted of deleting you can use clear 
+SYNTAX: set1.clear()
+Example:
+set1={1,2,3,4}
+set1.clear() 
+
+13)To check if value exisit in set
+
+Example :
+set1={1,2,3,4}
+if 2 in set1:
+ print("yes")
+else:
+ print("NO") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

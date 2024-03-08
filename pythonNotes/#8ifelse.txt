@@ -1,0 +1,38 @@
+##isAww
+Syntax
+#--------------
+#if,else,elseif
+#--------------
+if(condition):
+ Content If Condition true
+else:
+ Content If Conftion false
+
+#Remember use sapce  at start  of next line after if or else 
+##If you not use space compiler treat it as out of scope from if or else
+## This space is called INTEND  Mean we are going to start new block
+##In c++ we use {} but in python we use SPACE
+
+
+##Conditional Operator 
+# > < >= <= ==  !=
+
+#--------------
+#Nested if else
+#--------------
+
+## LEVEL OF INTEND
+#-----------
+#  EXAMPLE
+#-----------
+ if(a>=1)
+   print(1)
+   print(2)
+   print(3)
+   if(a=1)
+     print(4)
+     print(5)
+     print(6)
+print(7)
+
+#Level of intend 1,2,3 is same  and 4,5,6 is same and  7 is diiferent from block 1 and 2

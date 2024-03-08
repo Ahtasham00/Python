@@ -1,0 +1,46 @@
+//isAww
+==================
+seek() and tell()
+==================
+when we need to access specific index of file then we need seek() and tell() Function
+-------
+seek()  
+-------
+#It require one paramenter that is index number where it put pointer to read file
+syntax: f.seek(indexnumber)
+Example:
+f=open('test.txt','w')
+f.write("Python for every one")
+f.close()
+f.open('test.txt','r')
+f.seek(10)
+f.read()               //Now it start reading from index 11
+
+-------
+tell()
+-------
+##This function will tell where currently pointer pointing in file to read
+syntax:tell()
+Example:
+f=open('test.txt','w')
+f.write("Python for every one")
+f.close()
+f.open('test.txt','r')
+f.seek(10)
+print(f.tell())       //it will tell that pointer currently is at 10
+f.close()
+
+----------
+truncate()
+----------
+##This method limit the size of file
+Syntax:truncate(limit in index)
+Example:
+f=open('test.txt','w')
+f.truncate(10)  //it will limit size of file to 10 digits
+f.write("Python for every one")
+f.close()
+
+
+
+

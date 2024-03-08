@@ -1,0 +1,45 @@
+//isAww
+===================
+Enumerate function
+===================
+----------------------------------------------------------------------------------------------------
+str="Alpha Beta Gema"
+for i in str:
+ print(i)                       
+//If we want specific index to apply condition 
+//Then we need to use another varialbe initiate out of list and increment in loop
+str="Alpha Beta Gema"
+index=0              ##
+for i in str:
+ if(index==4):
+  print("Message")
+  index +=1          ##
+##To avoid this extra varialbe we can use "enumerate function" 
+------------------------------------------------------------------------------------------------------
+##enumerate function return value along index number
+##Actualy enumerate function return touple having two variable one index number and second its value
+
+syntax :
+for i in enumerate(str):
+ print(i)                     //It return touple having two values
+OR
+for index,value in enumerate(str): //It give unpacke touple both values in different variables
+ print(index,value)
+Example:
+for index,value in str:
+ if(index==3):
+  print("value at index 3 is  : ",value)
+-----------------------------------------------------------------------------------------------------
+we can also pass starting index in enumerate function 
+##By default starting index=0 but we can specify and it will enumerate allvariable 
+  But stating index will be change
+Example:
+str="Alpha Beta Gema"
+for i in enumerate(str,start=2)        //It will start from index 2    
+
+                      //Now A is at index 2 , L is at index 3 and so on 
+----------------------------------------------------------------------------
+
+
+
+

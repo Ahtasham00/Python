@@ -1,0 +1,42 @@
+//isAww
+=====================
+if __name__ == "__main__":
+=====================
+Problem : when we create module and import it in other program than it will excute autoamticaly its code
+Example:
+## module1
+ def funadd(a,b)
+  print(a+b)
+ funadd(10,20)
+##module2
+ import module1    
+ //Now it will automaticaly excute funadd(10,20) function as it call in module1
+##This is big problem
+SOLUTION : To avoid this problem we can use "" if __name__ == "__main__" ""
+Explain : This line of code will tell program that if the this file excute directly than excute it 
+          otherwise not
+
+    
+syntax :
+ if __name__ == "__main__":
+  block of code
+  function calling
+Example :
+ def main():
+   print("Python for every one")
+ if __name__ == "__main__":
+   main()                       //Now this main will only excute if this file directly excute
+                                //otherwise if this module import in another module than it will
+                                //not excute
+
+==============================================================================================
+ What actully __name__ is ?   importantconcept 1.4
+
+if we print(__name__)  in file that directly excute instead of used in other module 
+Than output will be __main__
+But if we write print(__name__) in module1 and import module1 in module2 
+Than output will be name of module 
+
+So thats why we use this condition ""if __name__ == "__main__"" mean excute from orignal file
+than if conditin will be true as result code given below will excute other wise in case of name
+of file condition will be false and as result code below to __main__ will not excute

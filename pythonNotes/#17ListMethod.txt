@@ -1,0 +1,32 @@
+//isAww
+======================
+List Method
+======================
+
+1)append()   // it add new item at end of list
+2)sort()     //sort list in Accending order
+3)sort(reverse=true)  //sort list in Decending order
+4)reverse()    //invert list
+5)index()     //give index of given parameter in list if exist  First Occurence
+6)count()     //count how many times given parameter found in list
+
+=>Review importantConcept 1.1
+7)copy()    //create copy of given list
+
+8)insert()              //insert item at specific index as result other variables next to
+ insert(indexNumber,value)    //specify index move one index forward
+
+9)extend()        //insert elements of one list to end of second list
+*)Example:
+list1=[1,2,3,4,5,6,7]
+list2=[10,12,13]
+
+list1.extend(list2)  //put all elements of list2 at end of list1
+
+Same job can be done by using concatination 
+**)Example:
+list3=list1+list2
+Difference between first method and second method is in first method we do not crete new 
+list just made change in list1,But if you do not want effect any existing list you can 
+use second method in which we crete new list
+

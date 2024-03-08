@@ -1,0 +1,32 @@
+//isAww
+Function =input()
+!--Input function ever take input as a string--! 
+
+---------
+Example
+---------
+a=input(<message that you want to display>)
+print(a)
+
+----------
+Problem    
+---------
+a=input("Enter first number")            user input 22
+b=input("Enter second number")           user input 10
+print(a+b)
+//Answer should be 32 But answer will be 2210
+Because input function take input as string
+
+To convert input string into other data type we use Type casting
+----------
+Example
+----------
+a=input("Enter first number")            user input 22
+b=input("Enter second number")           user input 10
+print(int(a)+int(b))
+
+OR 
+a=int(input("Enter first number"))
+b=int(input("Enter second number"))
+print(a+b)
+

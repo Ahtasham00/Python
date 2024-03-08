@@ -1,0 +1,35 @@
+#isAww
+==================
+Hybrid Inheritance
+==================
+Same as Diomand  Example :
+                                  Baseclass
+                                     |
+                                    / \
+                                   /   \
+                         DriveClass1   DriveClass2
+                                   \   /
+                                    \ /
+                                     |
+                                  DriveClass 3
+
+
+=========================
+Hierarchyical Inheritance
+=========================
+One Parent have have multiple child 
+and that childs have also multiple subchilds and So on
+
+                                    classA
+                         --------------|------------
+                         |                         |
+                      ClassB                     Class
+                  -------|-------            ------|--------
+                  |             |            |             |
+                ClassE          ClassF     ClassG        ClassH
+                  |               |          |             |
+
+
+
+
+

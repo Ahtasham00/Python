@@ -1,0 +1,40 @@
+//isAww
+======
+Set    [set is collection of well define objects]
+======
+##Set are immutiable like tupple, We can not change value later
+set={1,2,3}
+set[0]=11  generete error
+
+##Every value in set is unique
+
+##Set do not take repeated values
+set = {1,2,3,2}   print(set)= {1,2,3}
+
+##It is similar to list but in set ervery value is unique, Repeation is not allowed 
+set = {1,2,3,2}   output => {1,2,3}
+
+##Seperated by comma and enclosed by curly brackets
+Syntax : set={val1,val2,val3,val4}
+
+##It can contain different data types
+set={1,2.2,True,"asdf"}
+
+## Set are unorder collection of data
+set={11,22,33,44,55,66}
+print(set)   => {33,22,55,11,66}
+print(set)   => {55,22,11,33,66}
+print(set)   => {33,11,66,22,55}
+       Every time sets order change thats why it is unorder collection of data
+## Due to unorder we can not access them through index Number
+
+##To create empty set we use set="set()"  if we create set={}  it generate dictanory 
+
+##To access specific value 
+for value in set:
+ print(value)
+===================
+if <value> in set:
+ print("yes") 
+
+##

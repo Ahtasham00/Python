@@ -1,0 +1,54 @@
+//isAww
+=====================
+Exception Handling
+=====================
+For Error handling in python we use Try Except Code
+
+#when error generated
+ Error generated due to different reasons like invalid userinput,network issue,fileNotfound etc..
+#Result of error
+ As result of error program stop and not excute codeof all next lines where error generated
+=========  
+Solution  we can handel error Through exception handling as result rest of code will excute
+========= as normal.The code that generate error be will handeled
+
+Syntax :
+try: 
+ #Body of cade
+except Exception as e:
+ print(e)     e store error that generated 
+
+syntax :
+try:
+ #Body of cdoe
+excpet:
+ print("Message that you want do display")
+
+##There  are many types of error we can handle each of them seperatly 
+Syntax:
+try:
+#Body of code 
+except errorName
+Example:
+try:
+ num=input("Enter value")
+except valueError:             //value error generated when user Enter invalid input 
+ print("value error occur") 
+
+##One statement can generate multitypes of error
+Syntax:
+try:
+#Body of code 
+except errorName1:
+print("error generated due of errorName")
+except errorName2:
+print("error generated due of errorName")
+except errorName3:
+print("error generated due of errorName")
+
+
+
+
+
+
+

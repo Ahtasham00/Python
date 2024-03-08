@@ -1,0 +1,116 @@
+//isAww
+======================================================1.1======================================
+##Let suppose you create list 
+list1=[1,2,3,4,5,6,7,8]
+##Than you create another list
+list2=list1
+##Now you think list2 is copy of list1 BUT it is wrong
+list2[0]=45
+print(list1)       
+## As you made change in list2 But it also effect
+## output of list1 will be [45,2,3,4,5,6,7,8]
+--------------------------------Explaination------------------------------
+Actually what happen here is instead of creating copy assigenemnt operator 
+assign address of list1 to list2 as result any change made in list2 also 
+effect list1 becaue both variable holding same Address
+--------------------------------------------------------------------------
+
+Solution : use copy function
+===============================================================================================
+
+
+
+===========================================1.2=============================================
+ 2]   where we can can use else statement other than if  (in loops)
+===========================================================================================
+
+
+
+===========================================1.3==============================================
+3]   In function is there any statemnt that excute after if return function call  
+============================================================================================
+
+Yes in function FINALYYKEYWORD is only statemnt than will excute ever even if return call 
+ for more detail view #28
+
+============================================1.4================================================
+4] What actully __name__ is ?      #34
+==============================================================================================
+if we print(__name__)  in file that directly excute instead of used in other module 
+Than output will be __main__
+But if we write print(__name__) in module1 and import module1 in module2 
+Than output will be name of module 
+
+So thats why we use this condition ""if __name__ == "__main__"" mean excute from orignal file
+than if conditin will be true as result code given below will excute other wise in case of name
+of file condition will be false and as result code below to __main__ will not excute
+
+===============================================1.5=============================================================
+5] why    "a=[1,2,3,4],b=[1,2,3,4]" 'a==b' return True and 'a is b' return False     #43
+   while  "a=10 b=10"               'a==b' return True and 'a is b' return True 
+=============================================================================================================
+##"is" keyword compare  location of variable
+##'==' compare values of variable
+
+a=[1,2,3,4,5]
+b=[1,2,3,4,5]
+print(a==b) =>True     '=='campare values result true
+print(a is b) =>False  'is' comapre locatin as a and b are different variable so location different
+
+a=10
+b=10
+print(a==b) =>True
+print(z is b) => True  
+
+when we declare constant value in memory so python know constant will never going to change 
+as result intead of wasting another block of memory it will assign new variable same location
+as previous one
+As both location are same so as result (a is b) result True  
+
+---------------------------------------------------------------------------------------------------------------
+
+
+================================================================1.6====================================
+Is it necessary to pass self arguments in class methods       #50
+
+No it is not necessary for method of class to pass self argument   IFFFF it is static method in class
+
+
+
+
+
+
+======================================================================1.8=============================
+                                                               #52
+when ever we declare method python consider its first argument as instance(object)
+  as we write in most of case"self" in above example we write "cls" just to demostrate 
+  IT does't matter what first argument is python consider it as instance (object) itself
+
+How to tell python that first argumnet is instead of instance iteslf represent class 
+To do this this we need  class decorater
+------------------------------------------------------------------------------------------------
+
+=========================================================================1.9=======================
+MRO(Method resolution order) 
+In multiple inheritance if there is same method in different parent class
+and we call that method through child class how (python is going to call only one method among them)
+MRO find that method firsly in child class than fisrt parent class and then second and so onn
+if that method apper in parentClass1 and parentClass2 and in child class oreder of parents class as follow
+childclass(Parentclass2,Parentclass1)
+than MRO firstly check childclass than Parentclass2 and then Parentclass1 as that method present in Parentclass2 and it comes first so
+python is going to call that one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

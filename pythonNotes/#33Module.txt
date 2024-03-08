@@ -1,0 +1,48 @@
+//isAww
+==========
+Module
+==========
+##Modules are same like header file in c++
+##we can import them using "import" keyword
+Syntax: import <module name>
+Example: import time
+-------------------------------------------------------------------------------------------------------
+##There are many function one module have 
+ we can all them using module name
+Example:import math
+   math.add(1,2)   //here we call add functionn of math module
+-------------------------------------------------------------------------------------------------------
+##We can import only specific function from module using "from" keyword
+##When we import only function then there is no need of using module name to call functin just use 
+                                                                                     function name
+syntax:from <module> import <function>
+Syntax:from <module> import <fun1>,<fun2>,<fun3>
+Example:from math import sqrt            //It will import only sqrt functin from math module
+         sqrt(value)
+------------------------------------------------------------------------------------------------------
+##we can import each and every thing of  module using "*"
+syntax:from module import *
+-------------------------------------------------------------------------------------------------------
+##we can give short name to module or function using "as" Keyword
+Syntax:import module as M
+        M.function()
+Syntax: from math import sqrt as s
+Syntax: from math import pi,sqrt as s
+        s()         
+Example:import math as M
+         M.sqrt()
+--------------------------------------------------------------------------------------------------------
+##To check all function and variables of module we can use "dir" function
+Syntax:dir(module)     //it will display all functin of specify module
+--------------------------------------------------------------------------------------------------------
+
+
+=====================================================
+How to create your own module
+=====================================================
+
+
+1)crete two .py files in same folder     file1.py,file2.py
+2)now declare and define some variables and function in file1.py
+3)In file2.py write "import file1"
+4)call function in file2 that you create in file1 they will work properly

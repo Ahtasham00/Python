@@ -1,0 +1,89 @@
+//isAww
+str="python for every one"
+To check length
+print(len(str))
+
+
+-------------------------
+concept of immutibility           we can not change string
+-------------------------
+
+------------------------------------------------------------------------------
+But we can change string  example given
+
+print(str.upper()) 
+print(str.lower())  
+// it will crete new string all uppercase/lowercase 
+ as cancept of immuntibiliy (mention above str notchangeable)
+
+REMEMBER   this will not change exisitng string BUT create new strng
+--------------------------------------------------------------------------------
+
+
+-------------------
+Methods of Strings
+-------------------
+str.upper() 
+str.lower()
+str.strip()    it remove any white spaces
+
+str.rstrip()   it remove chracter that are in end of string 
+               str.rstrip("!")   //it remove chracter "!" if exist at end of line
+
+str.replace("replace me","with me")  it replace first paremeter with second paramter if exist in string
+
+str.split()   it split list into string
+
+example     str="wlecome~to~python"
+str.split("~")  
+ it split string into list number of items in list depend upon argument that you provide
+ it create total there object in given example beacue it split welcome,to,python as "~" present
+ between them 
+RESULT: ["wlecom","to","python"]
+
+str.capitalize()   it capitalize first chracter and truned rest chracter into lower case
+
+
+str.center()   it align string into center according to paramenter
+str.center(50) it will add lengthofstring-50 spaces at left side
+
+str.count()    it will count number of time given parameter occur in string  
+str.count("e") it will cout how mnay time e occur in string
+
+str.endswith()       it will check weather string ends with given parameter    Return True or False 
+str.endswith("!!")   it will check weather string ends with "!!"
+
+str.startwith()      it will check weather string given with given parameter    Return True or False     
+str.startswith("!!")   it will check weather string start with "!!"
+
+str.endswith("to",4,10)  it will check weather in string str index from 4 to 10 ends with to
+                 
+str.find()   search if given parameter exist in string or not if yes return starting index if not return -1
+str.find("python")    it will chwck "python" in given string  (first occurance)
+
+str.index()  same as find but instead of return -1 return error
+str.index("python")
+
+str.isalnum()  check weather given string is alpha numeric or not if any other chracter return false
+
+str.isalpha()  check weather string consist of capital and small alphabets if no return false
+
+str.islower()  check weather string consist of all lower order alphabets if no return false
+
+str.isupper()  check weather string consist of all upper order alphabets if no return false
+
+str.printable() if all alphabets are printable in string if no return false 
+            !!    "\n" is not printable    !!
+
+str.isspace()   return true only ond only if strig contain white spaces
+	
+str.istitle()   return true if each word's first is capital
+
+str.swapcase()  turn string all alphabets lower case into upper and vise versa
+
+str.title()     turn string's each word first letter into upper case
+
+
+ 
+                 
+

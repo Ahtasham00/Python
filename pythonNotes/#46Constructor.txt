@@ -1,0 +1,39 @@
+//isAww
+===========
+Constructor
+===========
+##There are two types of constructor 1)Parametrize constructor 2)Default constructor
+##To inilatize values
+##Constructor call it self automaticaly when object created
+
+Syntax :  def __init__(self):
+Example :
+------------------------Default Constructor----------------------
+class Person:
+ name="Alpha"
+ age=20
+ def __init__(self):
+  print("Python for every one")
+a=Person()       =>constructor of object a automatical called
+
+----------------------Parametraize Constructor-------------------
+class Person:
+ def __inint__(self,name,age):
+  self.name=name
+  slef.age=age
+ def info(self):
+  print(f"Name of Person is : {self.name}, Age of Person is : {slef.age}")
+
+------------------------------------------------------------------------------------------
+##Remeber we have to specify ""self"" as parameter in each functoin of class 
+  But not need to pass as argument Because it automaticaly pass in argument
+
+##When we declare variable in class without constructor than it is fine But we can also 
+  declare variable within constructor and then no need to declare them in other pllace in class
+
+Example:
+
+class Person:                                 class Person:
+ name="Alpha"                                  def __init__(self,n,a): 
+ age=20                                         name=n
+ def __init__(self):                            age=a

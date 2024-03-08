@@ -1,0 +1,76 @@
+//isAww
+Typecasting
+----------------------------------------------------------------------------
+Conservation of one data type into other data type is known as Type Casting
+----------------------------------------------------------------------------
+
+===========
+Example
+===========
+let 
+a="1"
+b="2"
+print(a+b)
+
+Answer is 12 instead of 3 Because a and b are consider as string in given case
+To take correct output Type casting come into being
+ 
+
+## There are multiples function that work for type casting 
+These function TYR to convert(IF POSSIBLE) given input into data same as function name
+1)float()    convert given datatype into float
+2)str()     convert  givent datatype inro string
+3)ord()
+4)hex()
+5)oct()
+6)tuple()
+7)set()
+8)list()
+9)dist()
+
+=====================
+Example solution
+=====================
+print(int(a)+int(b))    //first int function convert string a and b into integer than add
+
+
+
+## There are two types of type casting
+
+
+1)Explicit type casting        // done by developer
+Above mention example is Explicit type casting
+
+2)Implecet type casting        // done by python automaticaly
+----------
+Example
+----------
+a=2
+b=4.6
+print(a+b)   output=6.6
+
+Python itself convert lover order data type into higher order
+In given case int converted into flot 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To tell complier taht number written in double quote is actually valid NUMBER
+
+
+
+
+
+
+

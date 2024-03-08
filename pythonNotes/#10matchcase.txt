@@ -1,0 +1,31 @@
+//isAww
+-----------
+Match case              same as     Switch case in c++
+-----------
+syntax 
+
+val=5
+match val:
+ case 1:
+  block of code 
+ case 2:
+  block of code
+ csae 3:
+  block of code
+  case_:
+  Default value
+
+for defalut we use "case_"
+
+---------------------------------------------------------
+In c++  we use break; to avoid printing all cases below matching case 
+But in python we dont need to use break statement
+-----------------------------------------------------------
+
+we can also use if condition in cases
+
+Example : case_ if condition:
+          case_ if val=10:
+           print("value=10") 
+
+

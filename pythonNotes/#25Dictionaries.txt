@@ -1,0 +1,40 @@
+//isAww
+=============
+Dictonaries
+=============
+##same as real Disctionarie
+##Access many corrosponding values useing one key
+Syntax : info={"KEY1":"value1","KEY2":"value2"}  
+         we can access value through metadata
+         print(info[KEY1])   => value1
+         print(info)  => {'KEY1':'value1','KEY2':'value2'}
+
+Example:info={123:"Raza",
+              234:"Hamza",
+              456:"Rehan"
+              }
+ print(info)  => {123:'Raza',234:'Hamza',456:'Rehan'}
+ print(info[234]) => Hamza
+
+##we can also access value using key through "get()" Function
+##DIFFERENCE Between info.get() and info[]
+  info.get(key)    retrun None if not found
+  info[key]        through error if not found
+
+##To get all keys of dictionaries
+ dict.keys()   =>This will return all keys in dictionaries
+ ##For Knowledge
+  for key in dict.keys():
+   print(f"name of key is {key},value of key is dict[key]")
+
+##Accessing key values pair
+ dict.items()    => print all values in pair of key and corrosponding values
+ Example:
+ dict={1:'Ali',2:'Asad',3:'Rehan'}
+ print(dict.items())    dict_itmes([(1:'Ali'),(2:'Asad'),(3:'Rehan')])
+  ##For Knowledge 
+   for key, value in dict.items() 
+    print(key,"~",value) 
+
+
+

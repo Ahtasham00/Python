@@ -1,0 +1,66 @@
+//isAww
+==============
+File handling
+==============
+##To open file we need do declare variable and call open function
+SYNTAX : varaible=open('filename','Mode')   //If file not exist it through error
+         varivable.close()
+
+##Modes in file
+1)read "r"   :  open file for reading   
+2)write "w"  :  open file to write and remove all previous data
+3)append "a" :  open file to write at end
+4)create "x" :  create file and if file exist through error
+5)text  "t"  :  it is sue to reffer that given file is text   Example : open('test.txt','rt')
+6)binary "b" :  it is use to reffer taht given file is binary file (images,pdfs,etc)
+
+-------------
+File Reading
+-------------
+##To read conent of file:                          Example :
+var=open('file.extension','r')             f=open('test.txt','r')
+text=var.read()                            text=f.read()
+print(text)                                print(text)
+f.close()                                  f.close()
+We can also specify file type weather 't' or 'b'  such that 'rt' or 'rb'
+##We can also put limit in read() method so it will read upto that index
+
+--------------
+File Writing    
+--------------
+##There are two methods of writing in file 'w' or 'a' mention above
+##To write conent of file:                          Example :
+var=open('file.extension','w')             f=open('test.txt','w')
+text=var.write("content")                  f.write('Python for every one')
+f.close()                                  f.close()
+##If file already exist it remove its content and write new content
+
+------------
+File append
+------------
+##It will add content at end of previous content
+var=open('file.extension','a')             f=open('test.txt','a')
+text=var.write("content")                  f.write('Python for every one')
+f.close()                                  f.close()
+##Instead of removing last content it add new content at last of previous content
+
+---------------------------------------------------------
+some time we forget to call var.close() 
+To avoid this we can use "with" ketword
+---------------------------------------------------------
+SYNTAX:
+with open('filename.extension','mode') as var:
+ var.fun()
+
+Example:
+with open('file.txt',w) as f:
+ f.write("Welcome to Python")
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+//isAww
+==============
+Super Keyword
+=============
+It is basically use in inheritance 
+##when we call parent function from child class we need to "super()" Keyword
+
+Example:let suppose in parent and child class both have method with same name
+        if we simple write method name in child class python consider it as 
+        method of child But if we want to class parent method we need to specify 
+        supeer().function know python will understand that the specify method is from 
+        Parent class
+ class Parent:
+  def hyfunction(self):
+   print("hy from Parent")
+  def onlyinParent(self):
+   print("Only in parent")
+ class Child(Parent):
+   def hyfunction(self):
+    print("Hy from shild")
+ 
+obj=Parent()
+obj.hyfunction()
+obj.onlyinParent()        ///As onlyinparent() function is only in parent so when we call
+                       this function as it is not in child class it will then check function 
+                       of parent class

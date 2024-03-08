@@ -1,0 +1,23 @@
+//isAww
+==========
+os Module
+==========
+##os is module that help to communicate with operating system through python
+##There are to many methods asociated with os
+##we need tob explore throuch google
+syntax :
+import os
+Examlpe:
+import os
+os.system("ls")  
+//system is function that same as terminal we can pass any command through parameter and it will work
+//There are also many other function we can use  
+
+---------------------------------------------------------------------------
+import os
+#os.system("mkdir folder") #This will excute given commandls
+for i in range(1,101):
+ os.system(f"mkdir  ~/Documents/folder/Day{i}")
+
+This will create 100 folders
+--------------------------------------------------------------------------

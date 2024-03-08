@@ -1,0 +1,21 @@
+//isAww
+**Inter view Question**(Beside if where we can use else statement) 
+##Beside else statemnt with if  We can use else statement with loops (for loop,while loop)
+
+
+
+##Remember else statement excute ever time at end of loop
+Example:
+for i in range(5):
+ BODY
+else:
+ BODY
+
+##If loop breaks than else statement will not excute
+Example:
+for i in range(5):
+ BODY
+ condition :
+  break
+else:          //Now else statement will not excute if condition True
+ BODY

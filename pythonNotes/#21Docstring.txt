@@ -1,0 +1,33 @@
+//isAww
+-----------
+Docstring
+-----------
+##It is like comment But it is not comment Python won't ignore it
+##Docstring is string
+##use to discripe methods,classes etc
+
+##Docstring Ever quit next line of function decleration
+##If you not use docstring next line of function decleration or write defination right next
+   decleration and place docstring below some code it is no more Doc string 
+
+syntax : '''message'''
+##To print Docstring   print(FunctionName.__doc__)
+Example: 
+def add(a,b)
+ '''take two numbers and and return their sum""
+  return a+b 
+
+print(add.__doc__)
+  
+
+========
+PEP 8       Python Enhancement Proposal
+========
+It provide guideline or best pratice of program
+To consistence you python program,readable and mantainable
+
+==============
+Zen of python
+==============
+this is a poem for programer 
+in python3 termianal use  import this

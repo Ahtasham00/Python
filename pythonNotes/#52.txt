@@ -1,0 +1,73 @@
+//isAww
+------------------
+class Method
+-------------------
+When we declare function in class and pass some arguments in function those arguments are 
+for instance But if we need class as argument How can we do
+Here Class method come into being
+
+class Employee:
+ companyname="Alpha"
+ def __init__(self,name):
+  self.name=name
+ def changecompany(cls,name)        //cls same as self we write cls to see difference
+  cls.name=name
+
+##Now if we change comany name with object Eg
+
+ obj1=Emplayee()
+ obj1.changecompany="Beta"
+ print(obj1.company) ===>beta
+
+ ##But for other object comapny name still Alpha
+
+obj2=Employee() 
+print(obj2.comany())   ===>Alpha
+
+------------------------------------------------------------------------------
+                             What is happening here
+                        -----------------------------------
+when ever we declare method python consider its first argument as instance(object)
+  as we write in most of case"self" in above example we write "cls" just to demostrate 
+  IT does't matter what first argument is python consider it as instance (object) itself
+
+How to tell python that first argumnet is instead of instance iteslf represent class 
+To do this this we need  class decorater
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------
+How to crete method in class that change class varialbe globaly for all obj within any obj
+-------------------------------------------------------------------------------------------
+##we create class method that took class as argument
+##To do so we need class decorator
+
+Syntax:
+
+class Emplayee:
+ classname="Alpha"
+ @classmethod                 ==============>class decorator
+ def comanpyname(cls,companyname)        =========>class method
+  cls.company=companyname
+
+##Now if we change comany name with object Eg
+
+ obj1=Emplayee()
+ obj1.changecompany="Beta"
+ print(obj1.company) ===>beta
+
+ ##It will change company name of all other object
+obj2=Employee() 
+print(obj2.comany())   ===>Beta
+
+
+
+------------------------------------------------------------------------------------------
+                             What is happening here
+                        -----------------------------------
+when we declare class decoratoe abve any method it tell python that first argument is class
+(not instance)
+
+
+
+ 

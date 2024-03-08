@@ -1,0 +1,39 @@
+//isAww
+===============
+StringSlice
+===============
+
+string="Python for every one"
+
+length=14
+
+##To find TOTAL LENGTH
+
+print(len(string))             
+
+## To extract Specific content from string
+
+print(string[0:4])     //It will print data from 0 to 3
+
+print(string[:4])      //It will print data from start to specify length
+
+print(string[:])      // It will print data from start to End of string
+
+## using "-" 
+
+!! Remember when ever you use "-" Its mean len(string)-provided string !!
+
+length=14
+print(string[0:-3])  Same as    [0:len(string)-3]    same as [0:11]   print 0 to 10 index
+
+print(string[-1:4])  Same as    [len(string)-9:12]    same as [5:12]   print 0 to 10 index
+
+print(string[-10:-3])  same as   [len(string)-10:len(string)-3]     same as [4:11]   print 0 to 10 index
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+//isAww
+=============
+read line
+=============
+##readline method read single line from list
+Example :
+f=open('test.txt','r')
+line=f.readline()
+print(line)    //It will only print first line
+f.close()
+ 
+##we can triverse whole file using loop whith readline method
+Example :
+f=open('test.txt','r')
+while true:
+ line=f.readline()
+ if not line:    //mean empty string
+  break
+ print(line)
+f.close()
+-------------------------------------------------------------------------------
+If that is in line by line than this method is useful
+Explain:
+Record of one object is store in one line
+and multiples object's record stores in single file than we can use this method
+Example:
+Marks of students are store in file 
+Each students marks store line by line given below
+1122,50,60,70
+1133,55,62,64
+1144,45,65,55
+1155,48,52,63
+Now we can use readline method to get data line by line 
+f=open('read.txt','r')
+while True:
+ marks=f.readline() 
+ if not marks:
+  break 
+ list=marks.split(",")
+ print(f"ROLL NO  : {list[0]}")
+ print("Marks in Math : ",list[1])
+ print("Marks in Eng  : ",list[2])
+ print("Marks in Urdu : ",list[3])
+----------------------------------------------------------------------------------------
+
+ 

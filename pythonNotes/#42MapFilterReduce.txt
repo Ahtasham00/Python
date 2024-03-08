@@ -1,0 +1,89 @@
+//isAww
+-------
+Map
+-------
+It is a function that have two parameters
+1)function 2)itterable object(can be list,dict,set etc)
+##Funcationality of Map function is it apply its parameter 1 on (which is function) on each elements of
+  object(which is second paramenter)
+##It return object having map data type then we need to convert it into deisre data type using typecasting
+##Syntax : map(function,iterable object) 
+Example:
+def double(x):
+ return x*2
+list=[1,2,3,4,5]
+newlist=map(double,list)
+print(newlist)= => map datype
+print(list(newlist)) => [1,4,6,8,10]     //After list type casting
+
+we can also use lambda function instead of creating double function
+Example:
+list=[1,2,3,4,5]
+newlist=map(lambda x:x*2,list)
+print(list(newlist))
+-------
+Filter
+-------
+##It also have two paramenter same as
+1)function 2)itterable object(can be list,dict,set etc)
+##Funcationality of Map function is it apply its parameter 1 on (which is function) on each elements of
+  object(which is second paramenter)
+##In This case paramenter function return boolean value if true then it insert taht value in new object
+##It return object having filter data type then we need to convert it into deisre data type using typecasting
+##Syntax(function,iterable object)
+Example:
+def filterfunction(x):
+ return x>2
+list=[1,2,3,4,5]
+newlist=filter(filterfunctin,list)
+print(newlist)= =>filter object
+print(list(newlist)) => [3,4,5]
+---------
+reduce
+---------
+##It also have two paramenter same as map
+1)function 2)itterable object(can be list,dict,set etc)
+##Funcationality of Map function is it apply its parameter 1 on (which is function) on each elements of
+  object(which is second paramenter)
+##In this case it paramenter function take two element from iterabel object and made them one base on
+  operation and insert in newlist this process continue till all element on iterabel object become one
+  element after operating perform on then
+SYNATX : from funttools import reduce
+reduce(functio,iterable object)
+
+Example:
+from functools import reduce
+numbers=[1,2,3,4,5]
+sum=reduce(lambda x,y:x+y,numbers)
+print(sum)  => 15
+Backend work
+[1,2,3,4,5]
+[3,3,4,5]
+[6,4,5]
+[10,5]
+[15]
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

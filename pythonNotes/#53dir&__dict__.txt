@@ -1,0 +1,35 @@
+#isAww
+
+##Some time we use some classes which inner structure we dont know 
+##There are three in-built function that help us to understnd inner structure of class
+1)dir
+2)__dict__
+3)help()
+ 
+
+=======
+dir
+=======
+Syntax : dir(class) ,dir(var),dir(module)
+
+#It will display all variable and method in case of module,class
+#It will display all method in case of variable depending upon data type
+
+To check about what specific method do we can use 
+print(var.__function__)
+
+=======
+dict
+=======
+SYNTAX : obj.__dict__
+
+##It will return all varaialbe within class whome value we set with self
+print(obj.__dict__)
+
+=====
+help
+=====
+help is function that represent all information about parameter
+
+SYNTAX :help(parameter)     parameter=class,function,
+

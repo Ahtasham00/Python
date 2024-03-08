@@ -1,0 +1,60 @@
+//isAww
+========
+STRINGS    Everything in double quotes or single quations
+========
+
+##To REPRESENT DOUBLE QUOTES in string use back slash
+--------
+Example
+--------
+string="Hy Ali,\"my name is Ahmed \""
+
+##To Write in MULTIPLE LINES we use triple quotes ''' string''' 
+             we can also use triple double quotes """ string """
+---------
+Example
+---------
+string=''' hy
+           my
+           name
+           is
+           Aslam'''
+## To Get SPECIFIC CHRACTER of string we use []
+
+----------
+Example
+----------
+Name="Hy my name is Ali"
+print(Name[0])     output=H
+print(Name[5])     output=y
+
+
+## To get All Chracter One by One form string use Loop
+-----------
+Example
+-----------
+for chracter in name:
+print(chracter)
+
+-----------
+Searching
+-----------
+str="python for every one"
+
+if python in str
+ print("yes")
+else
+ print("No")
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+//isAww
+========
+Tuple
+========
+##Enclose in round brackets and elements seprated with comma
+syntax : tuple=(1,2,4)
+##Touple is not changeable
+toup=(1,2,3,4,5,6)
+ toup[0]=12  --->it generate error
+##Touple length is not change able
+##Touple can contain different data types
+ tup=(1,1.2,"x",True)
+
+##Positive,Negative indexing same as list
+##searching same as list
+##Slicing is same as list  !!But as it in not changeable it return new touple!!
+
+-------------------------------------------------------------------------------------
+To crete touple of one element than "," is necessary after first element
+---------------------------------------------------------------------------------
+if you not use comma such that : 
+    toup=(1)     => print(type(toup))  =>output = int
+or  toup=("s")   => print(type(toup))  =>output = string
+There for use of "," in single element is necessary
+    toup=(1,)         => print(type(toup))  =>output = touple
+    toup("s",)        => print(type(toup))  =>output = touple
+--------------------------------------------------------------------------------------
+
+
+   

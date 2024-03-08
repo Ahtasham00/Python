@@ -1,0 +1,50 @@
+//isAww
+===============
+lamda function
+===============
+##Lamda is key word to create anonymous function
+##Actualy we are creating variable of function and call that function through variable
+##This function is onel lineer
+##It is helpful for small operations like
+   add,mul,div,sub and other operations
+##It can take many arguments as you want
+Syntax  : <function name> = lambda <parameter[s]>: operation
+Example : double=lambda x: x*2    //This take one parameter and return its double
+Same as :
+def double(x,y)
+ return(x+y)
+Example : 
+add = lambda x,y:x+y    //This take two parameters and return thier sum 
+ return()
+
+  
+##For complex function usin lamda is not good approach
+
+----------------------------------------------------------------------------------
+We can pass function as arguments
+Example:
+def cube(value):
+ return value*value*value
+
+def apply(fun,value):
+ return 6+fun(value)
+apply(cube,10)
+
+##As we create one function cube and then create another function that take function and value
+as paremeters then we pass cube function in apply function
+##For small operation like taking cube we can use lamdaa instead of creating cube function
+
+Example :
+def apply(fun,value):
+ return 6+fun(value)
+apply(lambda x:x*x*x,2)
+
+Now see instead of creating cube function we simply use lambda and made it efficient 
+
+
+
+
+
+
+
+

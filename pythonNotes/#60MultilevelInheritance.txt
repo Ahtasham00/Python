@@ -1,0 +1,15 @@
+#isAww
+=======================
+Multilevel Inheritance
+======================
+One parent class have child class and that child class have another child class and
+so on
+
+Example :
+
+Human->Employess->Manager->General Manager
+       \                 \->Assistance Manager
+        \-------->Accountant
+         \------->Admin
+
+

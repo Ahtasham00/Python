@@ -1,0 +1,26 @@
+//isAww
+========
+is vs '=='   'is'&'==' both are comperison operator
+========
+##"is" keyword compare  location of variable
+##'==' compare values of variable
+
+Example1:
+a=[1,2,3,4,5]
+b=[1,2,3,4,5]
+print(a==b) =>True     '=='campare values result true
+print(a is b) =>False  'is' comapre locatin as a and b are different variable so location different 
+
+Example2:
+a=10
+b=10
+print(a==b) =>True
+print(z is b) => True     
+-------------------------------------------------------------------------------------
+why (a is b) result true
+-------------------------------------------------------------------------------------
+when we declare constant value in memory so python know constant will never going to change 
+as result intead of wasting another block of memory it will assign new variable same location
+as previous one
+As both location are same so as result (a is b) result True  
+##Touple is also constant variable
